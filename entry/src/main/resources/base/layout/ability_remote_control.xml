@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="top"
+    ohos:background_element="#EEEEEE"
+    ohos:orientation="vertical">
+
+    <TextField
+        ohos:hint="请输入"
+        ohos:id="$+id:remote_input"
+        ohos:height="45vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_text_field"
+        ohos:bottom_margin="15vp"
+        ohos:left_margin="30vp"
+        ohos:left_padding="10vp"
+        ohos:multiple_lines="false"
+        ohos:right_margin="30vp"
+        ohos:right_padding="10vp"
+        ohos:text_alignment="vertical_center"
+        ohos:text_size="18vp"
+        ohos:top_margin="35vp"/>
+
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:orientation="horizontal"
+        ohos:top_margin="20vp">
+
+        <TextField
+            ohos:id="$+id:plus_a"
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="$graphic:background_text_field"
+            ohos:hint="请输入数字"
+            ohos:multiple_lines="false"
+            ohos:text_alignment="center"
+            ohos:text_input_type="pattern_number"
+            ohos:text_size="18vp"/>
+
+        <Text
+            ohos:height="45vp"
+            ohos:width="match_content"
+            ohos:left_margin="8vp"
+            ohos:text="+"
+            ohos:text_size="30vp"/>
+
+        <TextField
+            ohos:id="$+id:plus_b"
+            ohos:height="40vp"
+            ohos:width="100vp"
+            ohos:background_element="$graphic:background_text_field"
+            ohos:hint="请输入数字"
+            ohos:left_margin="8vp"
+            ohos:multiple_lines="false"
+            ohos:text_alignment="center"
+            ohos:text_input_type="pattern_number"
+            ohos:text_size="18vp"/>
+
+        <Text
+            ohos:height="45vp"
+            ohos:width="match_content"
+            ohos:left_margin="8vp"
+            ohos:text="="
+            ohos:text_size="30vp"/>
+
+        <Text
+            ohos:id="$+id:result_text"
+            ohos:height="45vp"
+            ohos:width="match_content"
+            ohos:hint="00"
+            ohos:left_margin="12vp"
+            ohos:text_color="#FF58E353"
+            ohos:text_size="30vp"/>
+    </DirectionalLayout>
+
+    <Button
+        ohos:id="$+id:plus"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_button"
+        ohos:left_margin="20vp"
+        ohos:right_margin="20vp"
+        ohos:text="远程计算并返回结果"
+        ohos:text_size="30vp"/>
+
+    <Button
+        ohos:top_margin="20vp"
+        ohos:id="$+id:migrate"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_button"
+        ohos:left_margin="20vp"
+        ohos:right_margin="20vp"
+        ohos:text="迁移(流转)"
+        ohos:text_size="30vp"/>
+
+    <Button
+        ohos:top_margin="10vp"
+        ohos:id="$+id:migrate_back"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_button"
+        ohos:left_margin="20vp"
+        ohos:right_margin="20vp"
+        ohos:text="回迁"
+        ohos:text_size="30vp"/>
+</DirectionalLayout>
